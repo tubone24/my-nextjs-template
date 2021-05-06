@@ -63,7 +63,7 @@ const Hero = () => {
             alignSelf={'center'}
             position={'relative'}
           >
-            <a href="https://github.com/tubone24/my-nextjs-template">
+            <a href="https://github.com/tubone24/my-nextjs-template/fork">
               <Button
                 colorScheme={'green'}
                 bg={'green.400'}
