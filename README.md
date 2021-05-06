@@ -3,6 +3,8 @@
 > Such a template that implements Next.js with TypeScript, uses ChakraUI for CSS, and uses Jest for testing.
   
 
+[![Test](https://github.com/tubone24/my-nextjs-template/actions/workflows/node.yml/badge.svg)](https://github.com/tubone24/my-nextjs-template/actions/workflows/node.yml)
+
 ## Getting Started
 
 First, run the development server:
