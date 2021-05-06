@@ -8,8 +8,8 @@ import {
   Stack,
   HStack,
   VStack,
-} from '@chakra-ui/react';
-import { CheckIcon } from '@chakra-ui/icons';
+} from '@chakra-ui/react'
+import { CheckIcon } from '@chakra-ui/icons'
 
 export default function GridListWithHeading() {
   return (
@@ -29,7 +29,9 @@ export default function GridListWithHeading() {
             </Box>
             <VStack align={'start'}>
               <Text fontWeight={600}>Next.js</Text>
-              <Text color={'gray.600'}>We use Next.js, so we are familiar with SPA, SSG, and API development.</Text>
+              <Text color={'gray.600'}>
+                We use Next.js, so we are familiar with SPA, SSG, and API development.
+              </Text>
             </VStack>
           </HStack>
           <HStack key={2} align={'top'}>
@@ -38,7 +40,9 @@ export default function GridListWithHeading() {
             </Box>
             <VStack align={'start'}>
               <Text fontWeight={600}>Chakra UI</Text>
-              <Text color={'gray.600'}>By using Chakra UI, you can easily achieve CSS in JS while achieving Utility First.</Text>
+              <Text color={'gray.600'}>
+                By using Chakra UI, you can easily achieve CSS in JS while achieving Utility First.
+              </Text>
             </VStack>
           </HStack>
           <HStack key={3} align={'top'}>
@@ -47,7 +51,9 @@ export default function GridListWithHeading() {
             </Box>
             <VStack align={'start'}>
               <Text fontWeight={600}>TypeScript</Text>
-              <Text color={'gray.600'}>I've heard from my grandpa that if you don't use TypeScript, you'll get very angry.</Text>
+              <Text color={'gray.600'}>
+                I've heard from my grandpa that if you don't use TypeScript, you'll get very angry.
+              </Text>
             </VStack>
           </HStack>
           <HStack key={4} align={'top'}>
@@ -56,11 +62,13 @@ export default function GridListWithHeading() {
             </Box>
             <VStack align={'start'}>
               <Text fontWeight={600}>Jest(UI SnapShot)</Text>
-              <Text color={'gray.600'}>By using Jest (UI SnapShot), you can run regression tests safely and easily.</Text>
+              <Text color={'gray.600'}>
+                By using Jest (UI SnapShot), you can run regression tests safely and easily.
+              </Text>
             </VStack>
           </HStack>
         </SimpleGrid>
       </Container>
     </Box>
-  );
+  )
 }

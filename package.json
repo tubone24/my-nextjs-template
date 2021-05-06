@@ -6,6 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "typecheck": "tsc",
+    "format": "npx prettier --write \"src/**/*.tsx\"",
+    "format:check": "npx prettier --write --check \"src/**/*.tsx\"",
     "test": "jest",
     "test:us": "jest --updateSnapshot"
   },

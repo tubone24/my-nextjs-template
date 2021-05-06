@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from 'react'
 import {
   Box,
   Flex,
@@ -8,11 +8,11 @@ import {
   Container,
   Avatar,
   useColorModeValue,
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
-  return <Box>{children}</Box>;
-};
+  return <Box>{children}</Box>
+}
 
 const TestimonialContent = ({ children }: { children: ReactNode }) => {
   return (
@@ -38,40 +38,30 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
         bottom: '-16px',
         left: '50%',
         transform: 'translateX(-50%)',
-      }}>
+      }}
+    >
       {children}
     </Stack>
-  );
-};
+  )
+}
 
 const TestimonialHeading = ({ children }: { children: ReactNode }) => {
   return (
     <Heading as={'h3'} fontSize={'xl'}>
       {children}
     </Heading>
-  );
-};
+  )
+}
 
 const TestimonialText = ({ children }: { children: ReactNode }) => {
   return (
-    <Text
-      textAlign={'center'}
-      color={useColorModeValue('gray.600', 'gray.400')}
-      fontSize={'sm'}>
+    <Text textAlign={'center'} color={useColorModeValue('gray.600', 'gray.400')} fontSize={'sm'}>
       {children}
     </Text>
-  );
-};
+  )
+}
 
-const TestimonialAvatar = ({
-                             src,
-                             name,
-                             title,
-                           }: {
-  src: string;
-  name: string;
-  title: string;
-}) => {
+const TestimonialAvatar = ({ src, name, title }: { src: string; name: string; title: string }) => {
   return (
     <Flex align={'center'} mt={8} direction={'column'}>
       <Avatar src={src} alt={name} mb={2} />
@@ -82,8 +72,8 @@ const TestimonialAvatar = ({
         </Text>
       </Stack>
     </Flex>
-  );
-};
+  )
+}
 
 export default function WithSpeechBubbles() {
   return (
@@ -93,15 +83,11 @@ export default function WithSpeechBubbles() {
           <Heading>Our Clients Speak</Heading>
           <Text>It's a big lie, but here's what our customers have to say.</Text>
         </Stack>
-        <Stack
-          direction={{ base: 'column', md: 'row' }}
-          spacing={{ base: 10, md: 4, lg: 10 }}>
+        <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: 10, md: 4, lg: 10 }}>
           <Testimonial>
             <TestimonialContent>
               <TestimonialHeading>Ready to use</TestimonialHeading>
-              <TestimonialText>
-                I can't wait to use it as soon as I think of it.
-              </TestimonialText>
+              <TestimonialText>I can't wait to use it as soon as I think of it.</TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
@@ -114,9 +100,7 @@ export default function WithSpeechBubbles() {
           <Testimonial>
             <TestimonialContent>
               <TestimonialHeading>Easy to use</TestimonialHeading>
-              <TestimonialText>
-                I love how easy it is to create a web page.
-              </TestimonialText>
+              <TestimonialText>I love how easy it is to create a web page.</TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
@@ -130,8 +114,7 @@ export default function WithSpeechBubbles() {
             <TestimonialContent>
               <TestimonialHeading>Free to use</TestimonialHeading>
               <TestimonialText>
-                It's free, so it's very nice and safe for
-                poor people to use.
+                It's free, so it's very nice and safe for poor people to use.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -145,5 +128,5 @@ export default function WithSpeechBubbles() {
         </Stack>
       </Container>
     </Box>
-  );
+  )
 }

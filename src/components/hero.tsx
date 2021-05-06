@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from 'next/head'
 import {
   Box,
   Heading,
@@ -9,7 +9,7 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
-} from '@chakra-ui/react';
+} from '@chakra-ui/react'
 
 const Hero = () => {
   return (
@@ -26,11 +26,13 @@ const Hero = () => {
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
+          py={{ base: 20, md: 36 }}
+        >
           <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
+            lineHeight={'110%'}
+          >
             This is <br />
             <Text as={'span'} color={'gray.400'}>
               Next
@@ -51,14 +53,16 @@ const Hero = () => {
             Template
           </Heading>
           <Text color={'gray.500'}>
-            Such a template that implements Next.js with TypeScript, uses ChakraUI for CSS, and uses Jest for testing.
+            Such a template that implements Next.js with TypeScript, uses ChakraUI for CSS, and uses
+            Jest for testing.
           </Text>
           <Stack
             direction={'column'}
             spacing={3}
             align={'center'}
             alignSelf={'center'}
-            position={'relative'}>
+            position={'relative'}
+          >
             <a href="https://github.com/tubone24/my-nextjs-template/generate">
               <Button
                 colorScheme={'green'}
@@ -67,7 +71,8 @@ const Hero = () => {
                 px={6}
                 _hover={{
                   bg: 'green.600',
-                }}>
+                }}
+              >
                 Get Started
               </Button>
             </a>
@@ -91,7 +96,8 @@ const Hero = () => {
                 position={'absolute'}
                 right={'-125px'}
                 top={'-15px'}
-                transform={'rotate(10deg)'}>
+                transform={'rotate(10deg)'}
+              >
                 Use Template!!
               </Text>
             </Box>
@@ -99,7 +105,7 @@ const Hero = () => {
         </Stack>
       </Container>
     </>
-  );
+  )
 }
 
 const Arrow = createIcon({
@@ -113,6 +119,6 @@ const Arrow = createIcon({
       fill="currentColor"
     />
   ),
-});
+})
 
 export default Hero
