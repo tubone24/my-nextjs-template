@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![header](https://i.imgur.com/lSIDdMH.png)
+
+> Such a template that implements Next.js with TypeScript, uses ChakraUI for CSS, and uses Jest for testing.
+  
 
 ## Getting Started
 
