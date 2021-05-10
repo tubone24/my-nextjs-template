@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import {
   Box,
   Heading,
@@ -10,17 +9,14 @@ import {
   useColorModeValue,
   createIcon,
 } from '@chakra-ui/react'
+import { useRecoilValue } from 'recoil'
+import {UserName} from 'store/info'
+
 
 const Hero = () => {
+  const userName = useRecoilValue(UserName)
   return (
     <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-
       <Container maxW={'3xl'}>
         <Stack
           as={Box}
@@ -35,13 +31,14 @@ const Hero = () => {
           >
             This is <br />
             <Text as={'span'} color={'gray.400'}>
-              Next
+              Next.js
             </Text>
             +
             <Text as={'span'} color={'blue.400'}>
-              TS
+              TypeScript
             </Text>
             +
+            <br />
             <Text as={'span'} color={'green.400'}>
               Chakra
             </Text>
@@ -49,12 +46,20 @@ const Hero = () => {
             <Text as={'span'} color={'red.400'}>
               Jest
             </Text>
+            +
+            <br />
+            <Text as={'span'} color={'pink.400'}>
+              StoryBook
+            </Text>
+            +
+            <Text as={'span'} color={'purple.400'}>
+              Recoil
+            </Text>
             <br />
             Template
           </Heading>
           <Text color={'gray.500'}>
-            Such a template that implements Next.js with TypeScript, uses ChakraUI for CSS, and uses
-            Jest for testing.
+            This template implements Next.js with TypeScript, uses ChakraUI for CSS, uses Jest for testing, StoryBook for cataloging components, and Recoil for state management by <b>{userName}</b>.
           </Text>
           <Stack
             direction={'column'}
