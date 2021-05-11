@@ -67,7 +67,7 @@ export default function GridListWithHeading() {
               </Text>
             </VStack>
           </HStack>
-          <HStack key={4} align={'top'}>
+          <HStack key={5} align={'top'}>
             <Box color={'green.400'} px={2}>
               <Icon as={CheckIcon} />
             </Box>
@@ -78,7 +78,7 @@ export default function GridListWithHeading() {
               </Text>
             </VStack>
           </HStack>
-          <HStack key={4} align={'top'}>
+          <HStack key={6} align={'top'}>
             <Box color={'green.400'} px={2}>
               <Icon as={CheckIcon} />
             </Box>
