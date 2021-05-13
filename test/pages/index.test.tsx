@@ -8,11 +8,9 @@ global.fetch = require('node-fetch');
 
 test('index snapshot', () => {
   const { container } = render(
-      <ChakraProvider>
           <RecoilRoot>
               <HomePage />
           </RecoilRoot>
-      </ChakraProvider>
     )
   expect(container).toMatchSnapshot()
 })

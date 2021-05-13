@@ -59,7 +59,7 @@ const Hero = () => {
             Template
           </Heading>
           <Text color={'gray.500'}>
-            This template implements Next.js with TypeScript, uses ChakraUI for CSS, uses Jest for testing, StoryBook for cataloging components, and Recoil for state management by {userName}.
+            This template implements Next.js with TypeScript, uses ChakraUI for CSS, uses Jest for testing, StoryBook for cataloging components, and Recoil for state management by <b>{userName}</b>.
           </Text>
           <Stack
             direction={'column'}
