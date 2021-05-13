@@ -9,6 +9,9 @@ import {
 } from '@chakra-ui/react'
 import { FaInstagram, FaTwitter, FaYoutube, FaGithub } from 'react-icons/fa'
 import { ReactNode, useEffect, useState } from 'react'
+import { DateResponse } from 'src/pages/api/hello'
+import axios from "axios"
+import { schemaForType } from 'src/common/scheme'
 
 const SocialButton = ({
   children,
@@ -43,18 +46,17 @@ const SocialButton = ({
 }
 
 export default function SmallWithSocial() {
+  // const dateResponseScheme = schemaForType<DateResponse>()
   const [lastSync, setLastSync] = useState('')
+  const getLastSync = () => {
+    axios.get<DateResponse>('/api/hello')
+        .then((resp) => {
+          setLastSync(resp.data.year)
+        })
+  }
   useEffect(() => {
     getLastSync()
   }, [])
-  const getLastSync = () => {
-    fetch('/api/hello')
-      .then(
-      (response) => response.text())
-      .then((responseText) => {
-        setLastSync(responseText)
-      })
-  }
   return (
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
