@@ -57,9 +57,7 @@ exports[`index snapshot 1`] = `
         class="chakra-text css-q9k0mw"
       >
         This template implements Next.js with TypeScript, uses ChakraUI for CSS, uses Jest for testing, StoryBook for cataloging components, and Recoil for state management by 
-        <b>
-          tubone24
-        </b>
+        tubone24
         .
       </p>
       <div
