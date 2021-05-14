@@ -5,9 +5,9 @@ import { RecoilRoot } from 'recoil'
 
 test('index snapshot', () => {
   const { container } = render(
-          <RecoilRoot>
-              <HomePage />
-          </RecoilRoot>
+    <RecoilRoot>
+      <HomePage />
+    </RecoilRoot>
     )
   expect(container).toMatchSnapshot()
 })
