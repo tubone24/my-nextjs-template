@@ -10,7 +10,7 @@ import {
 import { FaInstagram, FaTwitter, FaYoutube, FaGithub } from 'react-icons/fa'
 import { ReactNode, useEffect, useState } from 'react'
 import { DateResponse } from 'src/pages/api/hello'
-import axios from "axios"
+import axios from 'axios'
 import { schemaForType } from 'src/common/scheme'
 
 const SocialButton = ({
@@ -49,10 +49,9 @@ export default function SmallWithSocial() {
   // const dateResponseScheme = schemaForType<DateResponse>()
   const [lastSync, setLastSync] = useState('')
   const getLastSync = () => {
-    axios.get<DateResponse>('/api/hello')
-        .then((resp) => {
-          setLastSync(resp.data.year)
-        })
+    axios.get<DateResponse>('/api/hello').then((resp) => {
+      setLastSync(resp.data.year)
+    })
   }
   useEffect(() => {
     getLastSync()

@@ -10,8 +10,7 @@ import {
   createIcon,
 } from '@chakra-ui/react'
 import { useRecoilValue } from 'recoil'
-import {UserName} from 'store/info'
-
+import { UserName } from 'store/info'
 
 const Hero = () => {
   const userName = useRecoilValue(UserName)
@@ -59,7 +58,9 @@ const Hero = () => {
             Template
           </Heading>
           <Text color={'gray.500'}>
-            This template implements Next.js with TypeScript, uses ChakraUI for CSS, uses Jest for testing, StoryBook for cataloging components, and Recoil for state management by <b>{userName}</b>.
+            This template implements Next.js with TypeScript, uses ChakraUI for CSS, uses Jest for
+            testing, StoryBook for cataloging components, and Recoil for state management by{' '}
+            <b>{userName}</b>.
           </Text>
           <Stack
             direction={'column'}
