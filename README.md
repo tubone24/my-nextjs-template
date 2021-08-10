@@ -52,3 +52,11 @@ yarn storybook
 ## Demo
 
 [Demo site is here](https://my-nextjs-template-tubone24.vercel.app/)
+
+## storybook
+
+<https://tubone24.github.io/my-nextjs-template/sb/>
+
+## Lighthouse
+
+<https://tubone24.github.io/my-nextjs-template/lh/report.html>
