@@ -7,6 +7,14 @@ on:
   pull_request:
     branches:
       - main
+  repository_dispatch:
+    types: [test_trigger]
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Reason'
+        required: true
+        default: 'Test run'
 
 jobs:
   unittest:
