@@ -13,31 +13,34 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
             rel="stylesheet"
           />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <title>This is Next.js + TypeScript + Chakra + Jest + StoryBook + Recoil Template</title>
-          <meta property="og:title" content="This is Next.js + TypeScript + Chakra+Jest + StoryBook + Recoil Template" />
+          <meta
+            property="og:title"
+            content="This is Next.js + TypeScript + Chakra+Jest + StoryBook + Recoil Template"
+          />
           <meta
             property="og:description"
             content="This template implements Next.js with TypeScript, uses ChakraUI for CSS, uses Jest for testing, StoryBook for cataloging components, and Recoil for state management by tubone24."
           />
-          <meta name="keywords" content="Template, Next.js, TypeScript, Chakra, Jest, StoryBook, Recoil" />
-          <meta property="og:type" content="website" />
           <meta
-            property="og:url"
-            content="https://my-nextjs-template-tubone24.vercel.app/"
+            name="keywords"
+            content="Template, Next.js, TypeScript, Chakra, Jest, StoryBook, Recoil"
           />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://my-nextjs-template-tubone24.vercel.app/" />
           <meta property="og:image" content="https://i.imgur.com/M2PhISt.png" />
-          <meta property="og:site_name" content="This is Next.js + TypeScript + Chakra+Jest + StoryBook + Recoil Template" />
+          <meta
+            property="og:site_name"
+            content="This is Next.js + TypeScript + Chakra+Jest + StoryBook + Recoil Template"
+          />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@meitante1conan" />
+          <meta name="twitter:url" content="https://my-nextjs-template-tubone24.vercel.app/" />
           <meta
-            name="twitter:url"
-            content="https://my-nextjs-template-tubone24.vercel.app/"
+            name="twitter:title"
+            content="This is Next.js + TypeScript + Chakra+Jest + StoryBook + Recoil Template"
           />
-          <meta name="twitter:title" content="This is Next.js + TypeScript + Chakra+Jest + StoryBook + Recoil Template" />
           <meta
             name="twitter:description"
             content="This template implements Next.js with TypeScript, uses ChakraUI for CSS, uses Jest for testing, StoryBook for cataloging components, and Recoil for state management by tubone24."

@@ -67,25 +67,27 @@ export default function GridListWithHeading() {
               </Text>
             </VStack>
           </HStack>
-          <HStack key={4} align={'top'}>
+          <HStack key={5} align={'top'}>
             <Box color={'green.400'} px={2}>
               <Icon as={CheckIcon} />
             </Box>
             <VStack align={'start'}>
               <Text fontWeight={600}>StoryBook</Text>
               <Text color={'gray.600'}>
-                Storybook is an open source tool for developing UI components and pages in isolation.
+                Storybook is an open source tool for developing UI components and pages in
+                isolation.
               </Text>
             </VStack>
           </HStack>
-          <HStack key={4} align={'top'}>
+          <HStack key={6} align={'top'}>
             <Box color={'green.400'} px={2}>
               <Icon as={CheckIcon} />
             </Box>
             <VStack align={'start'}>
               <Text fontWeight={600}>Recoil</Text>
               <Text color={'gray.600'}>
-                By using Recoil, it is now possible to manage the state of functional components in a relatively simple way.
+                By using Recoil, it is now possible to manage the state of functional components in
+                a relatively simple way.
               </Text>
             </VStack>
           </HStack>

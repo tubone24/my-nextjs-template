@@ -1,4 +1,4 @@
-import { Avatar, Box, Stack, Text, useColorModeValue } from '@chakra-ui/react';
+import { Avatar, Box, Stack, Text, useColorModeValue } from '@chakra-ui/react'
 
 export default function WithLargeQuote() {
   return (
@@ -8,20 +8,16 @@ export default function WithLargeQuote() {
       px={8}
       spacing={{ base: 8, md: 10 }}
       align={'center'}
-      direction={'column'}>
-      <Text
-        fontSize={{ base: 'xl', md: '2xl' }}
-        textAlign={'center'}
-        maxW={'3xl'}>
-        I've had more and more opportunities to create everything with Next.js,
-        but it's getting to be a hassle to modify the project from create-next-app to my liking every time.
-        So I decided to create a template to speed up the development process.
+      direction={'column'}
+    >
+      <Text fontSize={{ base: 'xl', md: '2xl' }} textAlign={'center'} maxW={'3xl'}>
+        I've had more and more opportunities to create everything with Next.js, but it's getting to
+        be a hassle to modify the project from create-next-app to my liking every time. So I decided
+        to create a template to speed up the development process.
       </Text>
       <Box textAlign={'center'}>
         <Avatar
-          src={
-            'https://avatars.githubusercontent.com/u/9511227?v=4'
-          }
+          src={'https://avatars.githubusercontent.com/u/9511227?v=4'}
           alt={'tubone24'}
           mb={2}
         />
@@ -32,5 +28,5 @@ export default function WithLargeQuote() {
         </Text>
       </Box>
     </Stack>
-  );
+  )
 }
