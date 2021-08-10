@@ -2,17 +2,8 @@ name: Test
 
 on:
   push:
-  pull_request:
     branches:
       - main
-  repository_dispatch:
-    types: [test_trigger]
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Reason'
-        required: true
-        default: 'Test run'
 
 jobs:
   unittest:
@@ -63,3 +54,32 @@ jobs:
           yarn install
       - name: build storybook
         run: yarn build-storybook
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./storybook-static
+          keep_files: true
+          destination_dir: sb
+  lighthouse:
+    needs: ['unittest', 'storybook']
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install lighthouse
+        run: sudo npm i -g lighthouse
+      - name: Run lighthouse
+        run: |
+          lighthouse \
+            --chrome-flags="--headless" \
+            --output html --output-path /tmp/report.html \
+            'https://my-nextjs-template-tubone24.vercel.app/'
+          mkdir ./lh
+          cp /tmp/report.html ./lh/report.html
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./lh
+          keep_files: true
+          destination_dir: lh
