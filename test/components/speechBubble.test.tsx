@@ -1,10 +1,10 @@
 import { render } from 'test/testUtils'
-import GridList from 'src/components/gridList'
+import WithSpeechBubbles from 'src/components/speechBubble'
 import * as React from 'react'
 
-describe('GridList', () => {
+describe('Speech Bubble', () => {
   it('Snapshot Test', () => {
-    const { container } = render(<GridList />)
+    const { container } = render(<WithSpeechBubbles />)
     expect(container).toMatchSnapshot()
   })
 })

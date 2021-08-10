@@ -1,10 +1,10 @@
 import { render } from 'test/testUtils'
-import GridList from 'src/components/gridList'
+import WithLargeQuote from 'src/components/quote'
 import * as React from 'react'
 
-describe('GridList', () => {
+describe('Quote', () => {
   it('Snapshot Test', () => {
-    const { container } = render(<GridList />)
+    const { container } = render(<WithLargeQuote />)
     expect(container).toMatchSnapshot()
   })
 })
