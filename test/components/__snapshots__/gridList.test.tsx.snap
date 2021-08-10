@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridList Snapshot Test 1`] = `
+<div>
+  <div
+    class="css-h94677"
+  >
+    <div
+      class="chakra-container chakra-stack css-d6kbj6"
+    >
+      <h2
+        class="chakra-heading css-1n7pa12"
+      >
+        Feature
+      </h2>
+      <p
+        class="chakra-text css-1gsj802"
+      >
+        This template contains a lot of modern features.
+      </p>
+    </div>
+    <div
+      class="chakra-container css-1780vv2"
+    >
+      <div
+        class="css-1bma46p"
+      >
+        <div
+          class="chakra-stack css-xiug77"
+        >
+          <div
+            class="css-oict79"
+          >
+            <svg
+              class="chakra-icon chakra-icon css-ikjmp3"
+              focusable="false"
+              viewBox="0 0 14 14"
+            >
+              <g
+                fill="currentColor"
+              >
+                <polygon
+                  points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="chakra-stack css-xerlbm"
+          >
+            <p
+              class="chakra-text css-35ezg3"
+            >
+              Next.js
+            </p>
+            <p
+              class="chakra-text css-jneyc"
+            >
+              We use Next.js, so we are familiar with SPA, SSG, and API development.
+            </p>
+          </div>
+        </div>
+        <div
+          class="chakra-stack css-xiug77"
+        >
+          <div
+            class="css-oict79"
+          >
+            <svg
+              class="chakra-icon chakra-icon css-ikjmp3"
+              focusable="false"
+              viewBox="0 0 14 14"
+            >
+              <g
+                fill="currentColor"
+              >
+                <polygon
+                  points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="chakra-stack css-xerlbm"
+          >
+            <p
+              class="chakra-text css-35ezg3"
+            >
+              Chakra UI
+            </p>
+            <p
+              class="chakra-text css-jneyc"
+            >
+              By using Chakra UI, you can easily achieve CSS in JS while achieving Utility First.
+            </p>
+          </div>
+        </div>
+        <div
+          class="chakra-stack css-xiug77"
+        >
+          <div
+            class="css-oict79"
+          >
+            <svg
+              class="chakra-icon chakra-icon css-ikjmp3"
+              focusable="false"
+              viewBox="0 0 14 14"
+            >
+              <g
+                fill="currentColor"
+              >
+                <polygon
+                  points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="chakra-stack css-xerlbm"
+          >
+            <p
+              class="chakra-text css-35ezg3"
+            >
+              TypeScript
+            </p>
+            <p
+              class="chakra-text css-jneyc"
+            >
+              I've heard from my grandpa that if you don't use TypeScript, you'll get very angry.
+            </p>
+          </div>
+        </div>
+        <div
+          class="chakra-stack css-xiug77"
+        >
+          <div
+            class="css-oict79"
+          >
+            <svg
+              class="chakra-icon chakra-icon css-ikjmp3"
+              focusable="false"
+              viewBox="0 0 14 14"
+            >
+              <g
+                fill="currentColor"
+              >
+                <polygon
+                  points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="chakra-stack css-xerlbm"
+          >
+            <p
+              class="chakra-text css-35ezg3"
+            >
+              Jest(UI SnapShot)
+            </p>
+            <p
+              class="chakra-text css-jneyc"
+            >
+              By using Jest (UI SnapShot), you can run regression tests safely and easily.
+            </p>
+          </div>
+        </div>
+        <div
+          class="chakra-stack css-xiug77"
+        >
+          <div
+            class="css-oict79"
+          >
+            <svg
+              class="chakra-icon chakra-icon css-ikjmp3"
+              focusable="false"
+              viewBox="0 0 14 14"
+            >
+              <g
+                fill="currentColor"
+              >
+                <polygon
+                  points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="chakra-stack css-xerlbm"
+          >
+            <p
+              class="chakra-text css-35ezg3"
+            >
+              StoryBook
+            </p>
+            <p
+              class="chakra-text css-jneyc"
+            >
+              Storybook is an open source tool for developing UI components and pages in isolation.
+            </p>
+          </div>
+        </div>
+        <div
+          class="chakra-stack css-xiug77"
+        >
+          <div
+            class="css-oict79"
+          >
+            <svg
+              class="chakra-icon chakra-icon css-ikjmp3"
+              focusable="false"
+              viewBox="0 0 14 14"
+            >
+              <g
+                fill="currentColor"
+              >
+                <polygon
+                  points="5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="chakra-stack css-xerlbm"
+          >
+            <p
+              class="chakra-text css-35ezg3"
+            >
+              Recoil
+            </p>
+            <p
+              class="chakra-text css-jneyc"
+            >
+              By using Recoil, it is now possible to manage the state of functional components in a relatively simple way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
