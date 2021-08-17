@@ -74,6 +74,7 @@ const NameForm = (): JSX.Element => {
               value={name}
               disabled={state !== 'initial'}
               onChange={(e: ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
+              data-test-id="input-name"
             />
           </FormControl>
           <FormControl w={{ base: '100%', md: '40%' }}>
@@ -82,6 +83,7 @@ const NameForm = (): JSX.Element => {
               isLoading={state === 'submitting'}
               w="100%"
               type={state === 'success' ? 'button' : 'submit'}
+              data-test-id="submit-name"
             >
               {state === 'success' ? <CheckIcon /> : 'Submit'}
             </Button>

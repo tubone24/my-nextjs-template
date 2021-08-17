@@ -75,6 +75,7 @@ const Hero = () => {
                 bg={'green.400'}
                 rounded={'full'}
                 px={6}
+                data-test-id="get-stated"
                 _hover={{
                   bg: 'green.600',
                 }}
@@ -83,7 +84,7 @@ const Hero = () => {
               </Button>
             </a>
             <a href="https://github.com/tubone24/my-nextjs-template">
-              <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+              <Button variant={'link'} colorScheme={'blue'} size={'sm'} data-test-id="learn-more">
                 Learn more
               </Button>
             </a>
