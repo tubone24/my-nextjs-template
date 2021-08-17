@@ -57,7 +57,7 @@ const Hero = () => {
             <br />
             Template
           </Heading>
-          <Text color={'gray.500'}>
+          <Text data-test-id="hero-description-text" color={'gray.500'}>
             This template implements Next.js with TypeScript, uses ChakraUI for CSS, uses Jest for
             testing, StoryBook for cataloging components, and Recoil for state management by{' '}
             <b>{userName}</b>.
