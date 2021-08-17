@@ -14,7 +14,11 @@
     "test:all": "yarn typecheck && yarn format && yarn test",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:e2e": "start-server-and-test dev http://localhost:3000 cy:open",
+    "test:e2e:ci": "start-server-and-test dev http://localhost:3000 cy:run"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.13",
@@ -46,6 +50,7 @@
     "@storybook/cli": "^6.3.7",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.3.7",
+    "@testing-library/cypress": "^8.0.0",
     "@testing-library/react": "^11.2.6",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.0.2",
@@ -57,10 +62,12 @@
     "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
+    "cypress": "^8.3.0",
     "husky": "^7.0.1",
     "jest": "^26.6.3",
     "lint-staged": "^11.1.2",
     "sass-loader": "^11.0.1",
+    "start-server-and-test": "^1.13.1",
     "storybook-addon-performance": "^0.16.1",
     "style-loader": "^3.2.1",
     "ts-jest": "^26.5.1",

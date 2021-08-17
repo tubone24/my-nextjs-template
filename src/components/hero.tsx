@@ -57,7 +57,7 @@ const Hero = () => {
             <br />
             Template
           </Heading>
-          <Text color={'gray.500'}>
+          <Text data-test-id="hero-description-text" color={'gray.500'}>
             This template implements Next.js with TypeScript, uses ChakraUI for CSS, uses Jest for
             testing, StoryBook for cataloging components, and Recoil for state management by{' '}
             <b>{userName}</b>.
@@ -75,6 +75,7 @@ const Hero = () => {
                 bg={'green.400'}
                 rounded={'full'}
                 px={6}
+                data-test-id="get-stated"
                 _hover={{
                   bg: 'green.600',
                 }}
@@ -83,7 +84,7 @@ const Hero = () => {
               </Button>
             </a>
             <a href="https://github.com/tubone24/my-nextjs-template">
-              <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+              <Button variant={'link'} colorScheme={'blue'} size={'sm'} data-test-id="learn-more">
                 Learn more
               </Button>
             </a>
