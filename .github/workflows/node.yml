@@ -32,6 +32,12 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
+      - name: SentryProperty
+        id: write_file
+        uses: timheuer/base64-to-file@v1
+        with:
+          fileName: 'sentry.properties'
+          encodedString: ${{ secrets.SENTRY_PROPERTY }}
       - name: install, build
         run: |
           yarn install
