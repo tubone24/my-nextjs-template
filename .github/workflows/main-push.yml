@@ -31,6 +31,7 @@ jobs:
           encodedString: ${{ secrets.SENTRY_PROPERTY }}
       - name: install, build
         run: |
+          export SENTRY_PROPERTIES=sentry.properties
           yarn install
           yarn build
       - name: typecheck
