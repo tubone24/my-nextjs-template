@@ -28,7 +28,7 @@ jobs:
         uses: tubone24/base64-to-file@test_otsubo
         with:
           fileName: 'sentry.properties'
-          fileDir: '/home/runner/work/my-nextjs-template/my-nextjs-template'
+          fileDir: ${{ github.workspace }}
           encodedString: ${{ secrets.SENTRY_PROPERTY }}
       - name: install, build
         run: |
