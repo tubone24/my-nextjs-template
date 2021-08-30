@@ -28,7 +28,7 @@ jobs:
         uses: timheuer/base64-to-file@v1
         with:
           fileName: 'sentry.properties'
-          fileDir: ${{ GITHUB_WORKSPACE }}
+          fileDir: ${{ env.GITHUB_WORKSPACE }}
           encodedString: ${{ secrets.SENTRY_PROPERTY }}
       - name: install, build
         run: |
