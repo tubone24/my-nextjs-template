@@ -27,7 +27,7 @@ jobs:
         id: write_file
         uses: timheuer/base64-to-file@v1
         with:
-          fileName: '/home/runner/work/my-nextjs-template/my-nextjs-template/sentry.properties'
+          fileName: './sentry.properties'
           encodedString: ${{ secrets.SENTRY_PROPERTY }}
       - name: install, build
         run: |
