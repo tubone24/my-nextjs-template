@@ -36,8 +36,7 @@ jobs:
         id: write_file
         uses: tubone24/base64-to-file@test_otsubo
         with:
-          fileName: 'sentry.properties'
-          fileDir: ${{ github.workspace }}
+          fileName: '${{ github.workspace }}/sentry.properties'
           encodedString: ${{ secrets.SENTRY_PROPERTY }}
       - name: install, build
         run: |
