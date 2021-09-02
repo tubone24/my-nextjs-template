@@ -34,9 +34,10 @@ jobs:
           node-version: 14
       - name: SentryProperty
         id: write_file
-        uses: tubone24/base64-to-file@test_otsubo
+        uses: timheuer/base64-to-file@v1.1.0
         with:
-          fileName: '${{ github.workspace }}/sentry.properties'
+          fileName: 'sentry.properties'
+          fileDir: ${{ github.workspace }}
           encodedString: ${{ secrets.SENTRY_PROPERTY }}
       - name: install, build
         run: |
