@@ -23,7 +23,7 @@
   "dependencies": {
     "@chakra-ui/icons": "1.0.17",
     "@chakra-ui/react": "1.6.12",
-    "@emotion/react": "11.4.1",
+    "@emotion/react": "11.5.0",
     "@emotion/styled": "11.3.0",
     "@sentry/nextjs": "6.11.0",
     "axios": "^0.21.1",
