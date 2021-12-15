@@ -63,6 +63,27 @@ jobs:
           npx cypress install
       - name: e2e test
         run: yarn test:e2e:ci
+  chromatic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: install
+        run: |
+          yarn install
+      - name: run chromatic
+        run: yarn chromatic
   storybook:
     runs-on: ubuntu-latest
     steps:
