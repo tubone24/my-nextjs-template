@@ -18,7 +18,8 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "test:e2e": "start-server-and-test dev http://localhost:3000 cy:open",
-    "test:e2e:ci": "start-server-and-test dev http://localhost:3000 cy:run"
+    "test:e2e:ci": "start-server-and-test dev http://localhost:3000 cy:run",
+    "chromatic": "npx chromatic --project-token=b096535152cf"
   },
   "dependencies": {
     "@chakra-ui/icons": "1.1.1",
@@ -62,6 +63,7 @@
     "@types/storybook__react": "5.2.1",
     "babel-jest": "27.4.5",
     "babel-loader": "8.2.3",
+    "chromatic": "^6.2.0",
     "css-loader": "6.5.1",
     "cypress": "9.1.1",
     "husky": "7.0.4",
