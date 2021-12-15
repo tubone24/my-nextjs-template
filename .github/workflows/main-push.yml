@@ -63,6 +63,17 @@ jobs:
           npx cypress install
       - name: e2e test
         run: yarn test:e2e:ci
+  chromatic-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install
+        run: yarn install
+      - name: run Chromatic
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
   storybook:
     runs-on: ubuntu-latest
     steps:

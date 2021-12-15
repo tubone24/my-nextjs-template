@@ -7,7 +7,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react'
-import { FaInstagram, FaTwitter, FaYoutube, FaGithub } from 'react-icons/fa'
+import { FaTwitter, FaGithub, FaRss } from 'react-icons/fa'
 import { ReactNode, useEffect, useState } from 'react'
 import { DateResponse } from 'src/pages/api/hello'
 import axios from 'axios'
@@ -77,6 +77,9 @@ export default function SmallWithSocial() {
           </SocialButton>
           <SocialButton label={'GitHub'} href={'https://github.com/tubone24'}>
             <FaGithub />
+          </SocialButton>
+          <SocialButton label={'blog'} href={'https://blog.tubone-project24.xyz/'}>
+            <FaRss />
           </SocialButton>
         </Stack>
       </Container>
