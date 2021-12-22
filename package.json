@@ -62,7 +62,7 @@
     "@types/storybook__react": "5.2.1",
     "babel-jest": "27.4.5",
     "babel-loader": "8.2.3",
-    "chromatic": "6.2.3",
+    "chromatic": "6.3.3",
     "css-loader": "6.5.1",
     "cypress": "9.2.0",
     "husky": "7.0.4",
