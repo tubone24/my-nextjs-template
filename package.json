@@ -67,7 +67,7 @@
     "cypress": "9.2.0",
     "husky": "7.0.4",
     "jest": "26.6.3",
-    "lint-staged": "12.1.5",
+    "lint-staged": "12.1.7",
     "sass-loader": "12.4.0",
     "start-server-and-test": "1.14.0",
     "storybook-addon-performance": "0.16.1",
