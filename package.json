@@ -25,7 +25,7 @@
     "@chakra-ui/react": "1.8.1",
     "@emotion/react": "11.8.1",
     "@emotion/styled": "11.8.1",
-    "@sentry/nextjs": "6.17.9",
+    "@sentry/nextjs": "6.18.0",
     "axios": "0.26.0",
     "framer-motion": "4.1.17",
     "next": "11.1.4",
