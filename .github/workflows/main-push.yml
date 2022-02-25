@@ -20,7 +20,7 @@ jobs:
             ${{ runner.OS }}-build-
             ${{ runner.OS }}
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 14
       - name: SentryProperty
@@ -54,7 +54,7 @@ jobs:
             ${{ runner.OS }}-build-
             ${{ runner.OS }}
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 14
       - name: install
@@ -87,7 +87,7 @@ jobs:
             ${{ runner.OS }}-build-
             ${{ runner.OS }}
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 14
       - name: install
