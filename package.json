@@ -54,7 +54,7 @@
     "@testing-library/cypress": "8.0.3",
     "@testing-library/react": "12.1.5",
     "@types/jest": "29.0.1",
-    "@types/node": "16.11.47",
+    "@types/node": "18.8.4",
     "@types/react": "17.0.45",
     "@types/storybook__addon-actions": "5.2.1",
     "@types/storybook__addon-info": "5.2.5",
