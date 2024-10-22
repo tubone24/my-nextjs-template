@@ -21,8 +21,8 @@
     "test:e2e:ci": "start-server-and-test dev http://localhost:3000 cy:run"
   },
   "dependencies": {
-    "@chakra-ui/icons": "1.1.1",
-    "@chakra-ui/react": "1.8.1",
+    "@chakra-ui/icons": "2.2.4",
+    "@chakra-ui/react": "3.0.0",
     "@emotion/react": "11.10.0",
     "@emotion/styled": "11.10.0",
     "@sentry/nextjs": "6.19.7",
