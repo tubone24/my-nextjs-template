@@ -5340,12 +5340,13 @@
   dependencies:
     "@storybook/addon-actions" "*"
 
-"@types/storybook__addon-info@5.2.5":
-  version "5.2.5"
-  resolved "https://registry.yarnpkg.com/@types/storybook__addon-info/-/storybook__addon-info-5.2.5.tgz#d2aecba6820091e3e690128ee7ae5613ebe2ed78"
-  integrity sha512-yMb5Jcpfd9Y/qIfo7oEdBvmU4ByeoYzj5tRwS7JHYL9bjv3l+R4b+2P+FIXmxYQqeZ1R2hHV9tJ5OT5Xj0LPzA==
+"@types/storybook__addon-info@5.2.9":
+  version "5.2.9"
+  resolved "https://registry.yarnpkg.com/@types/storybook__addon-info/-/storybook__addon-info-5.2.9.tgz#58bed9b341533023342c96ad6188fc60d20b89a1"
+  integrity sha512-qsaBB+65T5p6VHiCDOrKdxxzzCtLiXPQse4ARf90kdfZZ5oTVJeaWd9V9FANTSuBsuEzRz42OdkFn5qMF7+gaA==
   dependencies:
     "@storybook/addons" "^6.5.9"
+    "@storybook/csf" "0.0.2--canary.4566f4d.1"
     "@storybook/react" "^6.5.9"
     "@types/react" "*"
 
